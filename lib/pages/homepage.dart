@@ -1,6 +1,7 @@
 import 'package:auroliance/pages/products.dart';
 import 'package:flutter/material.dart';
 import 'package:carousel_slider/carousel_slider.dart';
+import 'package:auroliance/pages/ceos.dart';
 class Homepage extends StatefulWidget {
   const Homepage({super.key});
 
@@ -166,7 +167,7 @@ class _MyHomePageState extends State<Homepage> {
                       GestureDetector(
                         onTap: (){
                           setState(() {
-
+                            Navigator.pushNamed(context, Ceos.id);
                           });
                         },
                         child: SizedBox(

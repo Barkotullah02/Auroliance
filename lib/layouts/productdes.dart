@@ -2,11 +2,12 @@ import 'package:flutter/material.dart';
 
 class ProductDescription extends StatelessWidget {
   String ageGroup;
+  String moto;
   String image1;
   String image2;
   String image3;
   String image4;
-  ProductDescription({required this.ageGroup, required this.image1, required this.image2, required this.image3, required this.image4,});
+  ProductDescription({required this.ageGroup, required this.moto, required this.image1, required this.image2, required this.image3, required this.image4});
 
 
   @override
@@ -36,6 +37,14 @@ class ProductDescription extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        Text(
+          moto,
+          style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 15,
+            color: Colors.deepOrangeAccent,
+          ),
         ),
         Row(
           crossAxisAlignment: CrossAxisAlignment.center,
@@ -75,9 +84,9 @@ class ProductDescription extends StatelessWidget {
         ),
         SizedBox(
           width: double.infinity,
-          height: 17,
+          height: 30,
           child: Container(
-            color: Colors.grey,
+            color: Colors.limeAccent,
           ),
         ),
       ],

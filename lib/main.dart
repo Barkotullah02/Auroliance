@@ -1,6 +1,7 @@
 import 'package:auroliance/pages/products.dart';
 import 'package:flutter/material.dart';
 import 'package:auroliance/pages/homepage.dart';
+import 'package:auroliance/pages/ceos.dart';
 
 void main() {
   runApp(const Auroliance());
@@ -23,6 +24,7 @@ class Auroliance extends StatelessWidget {
       routes: {
         Homepage.id: (context)=> const Homepage(),
         Products.id: (context)=> const Products(),
+        Ceos.id: (context)=> const Ceos(),
       },
     );
   }

@@ -139,32 +139,55 @@ class _MyHomePageState extends State<Homepage> {
                   height: 100,
                   child: Row(
                     children: [
-                      Container(
-                        color: Colors.lightBlue,
-                        child: const Center(
-                          child: Text(
-                            'OUR PRODUCTS',
-                            style: TextStyle(
-                              color: Color(0x94201800),
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+                            Navigator.pushNamed(context, Products.id);
+                          });
+                        },
+                        child: SizedBox(
+                          width: 220,
+                          height: double.infinity,
+                          child: Container(
+                            color: Colors.lightBlue,
+                            child: const Center(
+                              child: Text(
+                                'OUR PRODUCTS',
+                                style: TextStyle(
+                                  color: Color(0x94201800),
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
                         ),
                       ),
-                      Container(
-                        color: Colors.lightBlue,
-                        child: const Center(
-                          child: Text(
-                            "CEO's",
-                            style: TextStyle(
-                              color: Color(0x94201800),
-                              fontSize: 30,
-                              fontWeight: FontWeight.bold,
+                      GestureDetector(
+                        onTap: (){
+                          setState(() {
+
+                          });
+                        },
+                        child: SizedBox(
+                          width: 220,
+                          height: double.infinity,
+                          child: Container(
+                            color: Color(0x940346A6),
+                            child: const Center(
+                              child: Text(
+                                "CEO's",
+                                style: TextStyle(
+                                  color: Color(0x94201800),
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.bold,
+                                ),
+                              ),
                             ),
                           ),
                         ),
                       ),
+
                     ],
                   ),
                 ),
